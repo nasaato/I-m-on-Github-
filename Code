@@ -1,0 +1,15 @@
+#include <iostream>
+#include <math.h>
+#include <locale.h>
+
+int main(void) {
+	setlocale(LC_ALL, "ru");
+
+	float a, b, x;
+	printf_s("Введите два числа для вычисления: x = (a - b)^2\n");
+	scanf_s("%f %f", &a, &b);
+	x = (pow(a, 2)) - (2 * a * b) + (pow(b, 2));
+	printf_s("Результат: x = %.2f\n", x);
+
+	return 0;
+}
